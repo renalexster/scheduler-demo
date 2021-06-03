@@ -41,7 +41,7 @@ public class SchedulerConfiguration {
                 );
             }
         } catch (Exception e) {
-            log.warn("Error registrering JobScheduler {}", jobScheduler.getJobName());
+            log.warn("Error registering JobScheduler {}", jobScheduler.getJobName());
         }
 
     }
