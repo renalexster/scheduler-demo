@@ -3,6 +3,12 @@
 -- In your Quartz properties file, you'll need to set 
 -- org.quartz.jobStore.driverDelegateClass = org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
 
+create schema quartz;
+
+alter schema quartz owner to schedule;
+
+
+
 DROP TABLE IF EXISTS quartz.qrtz_FIRED_TRIGGERS;
 DROP TABLE IF EXISTS quartz.qrtz_PAUSED_TRIGGER_GRPS;
 DROP TABLE IF EXISTS quartz.qrtz_SCHEDULER_STATE;
